@@ -397,6 +397,7 @@ triangle.fillColor = 'black';
 // /*
 // backgroundSky: {
 // spritePartSpec:{
+var layerSpritePartsArray = [];
 var backgroundSkyBlue = {
     "spriteBuildMethod": "Path.Rectangle",
     "spritePartCount": 0,
@@ -412,15 +413,15 @@ var spritePart = new Path.Rectangle(
     backgroundSkyBlue
  );
 
-// layerSpritePartsArray.push(spritePart);
+layerSpritePartsArray.push(spritePart);
 
 // /*
 // make a hindmost backdrop layer
 // (similar to how Photoshop and Illustrator work):
 var skyBlueLayer = new Layer({   // spriteAssy was layer
     // children: [carTop, carBody, wheel1, wheel2, sign],   // layerArray
-    children: spritePart,  // layerSpritePartsArray , // layerArray ,
-    position: [ 0, 0 ]  // ,
+    children: layerSpritePartsArray //, // layerArray ,
+    //position: [ 0, 0 ]  // ,
     // scale[scaleBod]
     // this.scale(scaleBod);
 });
@@ -429,6 +430,7 @@ var skyBlueLayer = new Layer({   // spriteAssy was layer
 // /*
 // backgroundSky: {
 // spritePartSpec:{
+var layerSpritePartsArray = [];
 var freeWayLanesLeft = {
     "spriteBuildMethod": "Path.Rectangle",
     "spritePartCount": 0,
@@ -443,16 +445,15 @@ var spritePart = new Path.Rectangle(
     // spriteSubSpecChosen[k]
     freeWayLanesLeft
  );
-
-// layerSpritePartsArray.push(spritePart);
+layerSpritePartsArray.push(spritePart);
 
 // /*
 // make a hindmost backdrop layer
 // (similar to how Photoshop and Illustrator work):
 var freeWayLanesLeft = new Layer({   // spriteAssy was layer
     // children: [carTop, carBody, wheel1, wheel2, sign],   // layerArray
-    children: spritePart,   // layerSpritePartsArray , // layerArray ,
-    position: [ 0, 0 ]  // ,
+    children: layerSpritePartsArray //, // layerArray ,
+    //position: [ 0, 0 ]  // ,
     // scale[scaleBod]
     // this.scale(scaleBod);
 });
@@ -461,6 +462,7 @@ var freeWayLanesLeft = new Layer({   // spriteAssy was layer
 // /*
 // backgroundSky: {
 // spritePartSpec:{
+var layerSpritePartsArray = [];
 var freeWayMedian = {
     "spriteBuildMethod": "Path.Rectangle",
     "spritePartCount": 0,
@@ -476,15 +478,15 @@ var spritePart = new Path.Rectangle(
     freeWayMedian
  );
 
-// layerSpritePartsArray.push(spritePart);
+layerSpritePartsArray.push(spritePart);
 
 // /*
 // make a hindmost backdrop layer
 // (similar to how Photoshop and Illustrator work):
 var freeWayMedian = new Layer({   // spriteAssy was layer
     // children: [carTop, carBody, wheel1, wheel2, sign],   // layerArray
-    children: spritePart,   // layerSpritePartsArray , // layerArray ,
-    position: [ 0, 0 ]  // ,
+    children: layerSpritePartsArray //, // layerArray ,
+    //position: [ 0, 0 ]  // ,
     // scale[scaleBod]
     // this.scale(scaleBod);
 });
@@ -493,6 +495,7 @@ var freeWayMedian = new Layer({   // spriteAssy was layer
 // /*
 // backgroundSky: {
 // spritePartSpec:{
+var layerSpritePartsArray = [];
 var freeWayLanesRt = {
     "spriteBuildMethod": "Path.Rectangle",
     "spritePartCount": 0,
@@ -508,20 +511,21 @@ var spritePart = new Path.Rectangle(
     freeWayLanesRt
  );
 
-// layerSpritePartsArray.push(spritePart);
+layerSpritePartsArray.push(spritePart);
 
 // /*
 // make a hindmost backdrop layer
 // (similar to how Photoshop and Illustrator work):
 var freeWayLanesRt = new Layer({   // spriteAssy was layer
     // children: [carTop, carBody, wheel1, wheel2, sign],   // layerArray
-    children: spritePart,   // layerSpritePartsArray , // layerArray ,
-    position: [ 0, 0 ]  // ,
+    children: layerSpritePartsArray //, // layerArray ,
+    //position: [ 0, 0 ]  // ,
     // scale[scaleBod]
     // this.scale(scaleBod);
 });
 // */
 
+var layerSpritePartsArray = [];
 var backgroundAquariumBlue = {
     "spriteBuildMethod": "Path.Rectangle",
     "spritePartCount": 0,
@@ -536,16 +540,15 @@ var spritePart = new Path.Rectangle(
     // spriteSubSpecChosen[k]
     backgroundAquariumBlue
  );
-
-// layerSpritePartsArray.push(spritePart);
+layerSpritePartsArray.push(spritePart);
 
 // /*
 // make a hindmost backdrop layer
 // (similar to how Photoshop and Illustrator work):
 var aquariumBlueLayer = new Layer({   // spriteAssy was layer
     // children: [carTop, carBody, wheel1, wheel2, sign],   // layerArray
-    children: spritePart,  // layerSpritePartsArray , // layerArray ,
-    position: [ 0, 0 ]  // ,
+    children: layerSpritePartsArray //, // layerArray   spritePart
+    // position: [ 0, 0 ]  // ,
     // scale[scaleBod]
     // this.scale(scaleBod);
 });
@@ -625,6 +628,7 @@ var makeBubbles = function(xArr,yArr){
     y = myRand(range);
     y = y + yArr[0];
 
+    var layerSpritePartsArray = [];
     var bubble = {
         "spriteBuildMethod": "Path.Circle",
         "spritePartCount": 0,
@@ -641,14 +645,14 @@ var makeBubbles = function(xArr,yArr){
         bubble
      );
 
-    // layerSpritePartsArray.push(spritePart);
+    layerSpritePartsArray.push(spritePart);
 
     // /*
     // make a hindmost backdrop layer
     // (similar to how Photoshop and Illustrator work):
     var bubbleLayer = new Layer({   // spriteAssy was layer
         // children: [carTop, carBody, wheel1, wheel2, sign],   // layerArray
-        children: [spritePart]   // layerSpritePartsArray , // layerArray ,
+        children: layerSpritePartsArray //, // layerArray ,
         //position: [ x-200, y ]  // ,
         // scale[scaleBod]
         // this.scale(scaleBod);
