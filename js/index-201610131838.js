@@ -555,6 +555,63 @@ var aquariumBlueLayer = new Layer({   // spriteAssy was layer
 // */
 
 
+// /*
+var layerSpritePartsArray = [];
+var clickHereToSpeakerDrooledVals = {
+    "spriteBuildMethod": "Path.Rectangle",
+    "spritePartCount": 0,
+    "spritePart": "backgroundAquariumBlue",
+    "point": [50, ( .59 * canvasHeight)],
+    "size": [(.3 * canvasWidth), (.2 * canvasHeight)],
+    "fillColor": 'white'
+}
+
+var spritePart = new Path.Rectangle(
+    // spriteSubSpecChosen.carTop
+    // spriteSubSpecChosen[k]
+    clickHereToSpeakerDrooledVals
+ );
+
+layerSpritePartsArray.push(spritePart);
+
+//sign stuff
+// if(0 == 0){
+var spritePart = new PointText(new Point(200, ( .69 * canvasHeight)));
+// alert("signChoicesArray[0] = " + signChoicesArray[0])    ['Driver \nin Training','center','black']
+      spritePart.justification = 'center';  //  signChoicesArray[1];
+      spritePart.fillColor = 'black'    // signChoicesArray[2];
+      spritePart.content = 'SpeakerDrooled \nClick Here';  // signChoicesArray[0];
+      spritePart.fontSize = 30;
+      // layerArray.push(sign);
+      // layerSpritePartsArray.push(sign);
+// }
+
+layerSpritePartsArray.push(spritePart);
+
+// /*
+// make a hindmost backdrop layer
+// (similar to how Photoshop and Illustrator work):
+var clickHereToSpeakerDrooled = new Layer({   // spriteAssy was layer
+    // children: [carTop, carBody, wheel1, wheel2, sign],   // layerArray
+    children: layerSpritePartsArray  // layerSpritePartsArray , // layerArray ,
+    // position: [ 0, 0 ]  // ,
+    // scale[scaleBod]
+    // this.scale(scaleBod);
+});
+
+clickHereToSpeakerDrooled.onClick = function (event) {
+    console.log("redirecting via mouse");
+    // alert("redirecting...");
+    //  window.location = "https://jcj52436999.github.io/wellKnowIt/";
+    //  file:///home/jcj52436999/Dropbox/WkspcWebAndApps/BCCIntroWebMMART162/SpeakerDrooled/index.html
+    window.location = "speaker-drooled-rating-screen.html";
+    // window.location = "file:///home/jcj52436999/Dropbox/WkspcWebAndApps/BCCIntroWebMMART162/SpeakerDrooled/speaker-drooled-rating-screen.html";
+}
+
+
+// */
+
+
 
 function myRand(range){
     return Math.round(Math.random() * range);
@@ -646,63 +703,6 @@ fin.fillColor = '#e9e9ff';
 fin.rotate(20);
 // fin.selected = true;
 // fish2.add(fin);
-
-
-// /*
-var layerSpritePartsArray = [];
-var clickHereToSpeakerDrooledVals = {
-    "spriteBuildMethod": "Path.Rectangle",
-    "spritePartCount": 0,
-    "spritePart": "backgroundAquariumBlue",
-    "point": [50, ( .59 * canvasHeight)],
-    "size": [(.3 * canvasWidth), (.2 * canvasHeight)],
-    "fillColor": 'white'
-}
-
-var spritePart = new Path.Rectangle(
-    // spriteSubSpecChosen.carTop
-    // spriteSubSpecChosen[k]
-    clickHereToSpeakerDrooledVals
- );
-
-layerSpritePartsArray.push(spritePart);
-
-//sign stuff
-// if(0 == 0){
-var spritePart = new PointText(new Point(200, ( .69 * canvasHeight)));
-// alert("signChoicesArray[0] = " + signChoicesArray[0])    ['Driver \nin Training','center','black']
-      spritePart.justification = 'center';  //  signChoicesArray[1];
-      spritePart.fillColor = 'black'    // signChoicesArray[2];
-      spritePart.content = 'SpeakerDrooled \nClick Here';  // signChoicesArray[0];
-      spritePart.fontSize = 30;
-      // layerArray.push(sign);
-      // layerSpritePartsArray.push(sign);
-// }
-
-layerSpritePartsArray.push(spritePart);
-
-// /*
-// make a hindmost backdrop layer
-// (similar to how Photoshop and Illustrator work):
-var clickHereToSpeakerDrooled = new Layer({   // spriteAssy was layer
-    // children: [carTop, carBody, wheel1, wheel2, sign],   // layerArray
-    children: layerSpritePartsArray  // layerSpritePartsArray , // layerArray ,
-    // position: [ 0, 0 ]  // ,
-    // scale[scaleBod]
-    // this.scale(scaleBod);
-});
-
-clickHereToSpeakerDrooled.onClick = function (event) {
-    console.log("redirecting via mouse");
-    // alert("redirecting...");
-    //  window.location = "https://jcj52436999.github.io/wellKnowIt/";
-    //  file:///home/jcj52436999/Dropbox/WkspcWebAndApps/BCCIntroWebMMART162/SpeakerDrooled/index.html
-    window.location = "speaker-drooled-rating-screen.html";
-    // window.location = "file:///home/jcj52436999/Dropbox/WkspcWebAndApps/BCCIntroWebMMART162/SpeakerDrooled/speaker-drooled-rating-screen.html";
-}
-// */
-
-
 
 // alert("Makes it to moveCar var def. ")
 //define moveCar function:

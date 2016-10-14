@@ -337,7 +337,7 @@ triangle.fillColor = 'black';
         break;
    }
 
-
+        //sign stuff
         if(signChoicesArray[0] != 'noSign'){
         var sign = new PointText(new Point(50, 20));
         // alert("signChoicesArray[0] = " + signChoicesArray[0])
@@ -347,6 +347,7 @@ triangle.fillColor = 'black';
               // layerArray.push(sign);
               layerSpritePartsArray.push(sign);
         }
+
 
         // alert("layerArray - ", layerArray);
         // console.log("layerArray - ", layerArray);
@@ -377,7 +378,10 @@ triangle.fillColor = 'black';
       spriteAssy.onClick = function (event) {
         console.log("redirecting via mouse");
         alert("redirecting...");
-        window.location = "https://jcj52436999.github.io/wellKnowIt/";
+        //  window.location = "https://jcj52436999.github.io/wellKnowIt/";
+        //  file:///home/jcj52436999/Dropbox/WkspcWebAndApps/BCCIntroWebMMART162/SpeakerDrooled/index.html
+        window.location = "speaker-drooled-rating-screen.html";
+        // window.location = "file:///home/jcj52436999/Dropbox/WkspcWebAndApps/BCCIntroWebMMART162/SpeakerDrooled/speaker-drooled-rating-screen.html";
     };
     }
 
@@ -393,6 +397,7 @@ triangle.fillColor = 'black';
 // /*
 // backgroundSky: {
 // spritePartSpec:{
+var layerSpritePartsArray = [];
 var backgroundSkyBlue = {
     "spriteBuildMethod": "Path.Rectangle",
     "spritePartCount": 0,
@@ -408,15 +413,15 @@ var spritePart = new Path.Rectangle(
     backgroundSkyBlue
  );
 
-// layerSpritePartsArray.push(spritePart);
+layerSpritePartsArray.push(spritePart);
 
 // /*
 // make a hindmost backdrop layer
 // (similar to how Photoshop and Illustrator work):
 var skyBlueLayer = new Layer({   // spriteAssy was layer
     // children: [carTop, carBody, wheel1, wheel2, sign],   // layerArray
-    children: spritePart,  // layerSpritePartsArray , // layerArray ,
-    position: [ 0, 0 ]  // ,
+    children: layerSpritePartsArray //, // layerArray ,
+    //position: [ 0, 0 ]  // ,
     // scale[scaleBod]
     // this.scale(scaleBod);
 });
@@ -425,6 +430,7 @@ var skyBlueLayer = new Layer({   // spriteAssy was layer
 // /*
 // backgroundSky: {
 // spritePartSpec:{
+var layerSpritePartsArray = [];
 var freeWayLanesLeft = {
     "spriteBuildMethod": "Path.Rectangle",
     "spritePartCount": 0,
@@ -439,16 +445,15 @@ var spritePart = new Path.Rectangle(
     // spriteSubSpecChosen[k]
     freeWayLanesLeft
  );
-
-// layerSpritePartsArray.push(spritePart);
+layerSpritePartsArray.push(spritePart);
 
 // /*
 // make a hindmost backdrop layer
 // (similar to how Photoshop and Illustrator work):
 var freeWayLanesLeft = new Layer({   // spriteAssy was layer
     // children: [carTop, carBody, wheel1, wheel2, sign],   // layerArray
-    children: spritePart,   // layerSpritePartsArray , // layerArray ,
-    position: [ 0, 0 ]  // ,
+    children: layerSpritePartsArray //, // layerArray ,
+    //position: [ 0, 0 ]  // ,
     // scale[scaleBod]
     // this.scale(scaleBod);
 });
@@ -457,6 +462,7 @@ var freeWayLanesLeft = new Layer({   // spriteAssy was layer
 // /*
 // backgroundSky: {
 // spritePartSpec:{
+var layerSpritePartsArray = [];
 var freeWayMedian = {
     "spriteBuildMethod": "Path.Rectangle",
     "spritePartCount": 0,
@@ -472,15 +478,15 @@ var spritePart = new Path.Rectangle(
     freeWayMedian
  );
 
-// layerSpritePartsArray.push(spritePart);
+layerSpritePartsArray.push(spritePart);
 
 // /*
 // make a hindmost backdrop layer
 // (similar to how Photoshop and Illustrator work):
 var freeWayMedian = new Layer({   // spriteAssy was layer
     // children: [carTop, carBody, wheel1, wheel2, sign],   // layerArray
-    children: spritePart,   // layerSpritePartsArray , // layerArray ,
-    position: [ 0, 0 ]  // ,
+    children: layerSpritePartsArray //, // layerArray ,
+    //position: [ 0, 0 ]  // ,
     // scale[scaleBod]
     // this.scale(scaleBod);
 });
@@ -489,6 +495,7 @@ var freeWayMedian = new Layer({   // spriteAssy was layer
 // /*
 // backgroundSky: {
 // spritePartSpec:{
+var layerSpritePartsArray = [];
 var freeWayLanesRt = {
     "spriteBuildMethod": "Path.Rectangle",
     "spritePartCount": 0,
@@ -504,20 +511,21 @@ var spritePart = new Path.Rectangle(
     freeWayLanesRt
  );
 
-// layerSpritePartsArray.push(spritePart);
+layerSpritePartsArray.push(spritePart);
 
 // /*
 // make a hindmost backdrop layer
 // (similar to how Photoshop and Illustrator work):
 var freeWayLanesRt = new Layer({   // spriteAssy was layer
     // children: [carTop, carBody, wheel1, wheel2, sign],   // layerArray
-    children: spritePart,   // layerSpritePartsArray , // layerArray ,
-    position: [ 0, 0 ]  // ,
+    children: layerSpritePartsArray //, // layerArray ,
+    //position: [ 0, 0 ]  // ,
     // scale[scaleBod]
     // this.scale(scaleBod);
 });
 // */
 
+var layerSpritePartsArray = [];
 var backgroundAquariumBlue = {
     "spriteBuildMethod": "Path.Rectangle",
     "spritePartCount": 0,
@@ -532,16 +540,15 @@ var spritePart = new Path.Rectangle(
     // spriteSubSpecChosen[k]
     backgroundAquariumBlue
  );
-
-// layerSpritePartsArray.push(spritePart);
+layerSpritePartsArray.push(spritePart);
 
 // /*
 // make a hindmost backdrop layer
 // (similar to how Photoshop and Illustrator work):
 var aquariumBlueLayer = new Layer({   // spriteAssy was layer
     // children: [carTop, carBody, wheel1, wheel2, sign],   // layerArray
-    children: spritePart,  // layerSpritePartsArray , // layerArray ,
-    position: [ 0, 0 ]  // ,
+    children: layerSpritePartsArray //, // layerArray   spritePart
+    // position: [ 0, 0 ]  // ,
     // scale[scaleBod]
     // this.scale(scaleBod);
 });
@@ -563,6 +570,7 @@ var makeBubbles = function(xArr,yArr){
     y = myRand(range);
     y = y + yArr[0];
 
+    var layerSpritePartsArray = [];
     var bubble = {
         "spriteBuildMethod": "Path.Circle",
         "spritePartCount": 0,
@@ -579,14 +587,14 @@ var makeBubbles = function(xArr,yArr){
         bubble
      );
 
-    // layerSpritePartsArray.push(spritePart);
+    layerSpritePartsArray.push(spritePart);
 
     // /*
     // make a hindmost backdrop layer
     // (similar to how Photoshop and Illustrator work):
     var bubbleLayer = new Layer({   // spriteAssy was layer
         // children: [carTop, carBody, wheel1, wheel2, sign],   // layerArray
-        children: [spritePart]   // layerSpritePartsArray , // layerArray ,
+        children: layerSpritePartsArray //, // layerArray ,
         //position: [ x-200, y ]  // ,
         // scale[scaleBod]
         // this.scale(scaleBod);
@@ -636,6 +644,61 @@ fin.fillColor = '#e9e9ff';
 fin.rotate(20);
 // fin.selected = true;
 // fish2.add(fin);
+
+
+// /*
+var layerSpritePartsArray = [];
+var clickHereToReturnToIndexScreen = {
+    "spriteBuildMethod": "Path.Rectangle",
+    "spritePartCount": 0,
+    "spritePart": "backgroundAquariumBlue",
+    "point": [50, ( .59 * canvasHeight)],
+    "size": [(.3 * canvasWidth), (.2 * canvasHeight)],
+    "fillColor": 'white'
+}
+
+var spritePart = new Path.Rectangle(
+    // spriteSubSpecChosen.carTop
+    // spriteSubSpecChosen[k]
+    clickHereToReturnToIndexScreen
+ );
+
+layerSpritePartsArray.push(spritePart);
+
+//sign stuff
+// if(0 == 0){
+var spritePart = new PointText(new Point(200, ( .69 * canvasHeight)));
+// alert("signChoicesArray[0] = " + signChoicesArray[0])    ['Driver \nin Training','center','black']
+      spritePart.justification = 'center';  //  signChoicesArray[1];
+      spritePart.fillColor = 'black'    // signChoicesArray[2];
+      spritePart.content = 'Back to opening \nClick Here';  // signChoicesArray[0];
+      spritePart.fontSize = 30;
+      // layerArray.push(sign);
+      // layerSpritePartsArray.push(sign);
+// }
+
+layerSpritePartsArray.push(spritePart);
+
+// /*
+// make a hindmost backdrop layer
+// (similar to how Photoshop and Illustrator work):
+var clickHereToReturnToIndexScreen = new Layer({   // spriteAssy was layer
+    // children: [carTop, carBody, wheel1, wheel2, sign],   // layerArray
+    children: layerSpritePartsArray  // layerSpritePartsArray , // layerArray ,
+    // position: [ 0, 0 ]  // ,
+    // scale[scaleBod]
+    // this.scale(scaleBod);
+});
+
+clickHereToReturnToIndexScreen.onClick = function (event) {
+    console.log("redirecting via mouse");
+    // alert("redirecting...");
+    //  window.location = "https://jcj52436999.github.io/wellKnowIt/";
+    //  file:///home/jcj52436999/Dropbox/WkspcWebAndApps/BCCIntroWebMMART162/SpeakerDrooled/index.html
+    window.location = "index.html";
+    // window.location = "file:///home/jcj52436999/Dropbox/WkspcWebAndApps/BCCIntroWebMMART162/SpeakerDrooled/speaker-drooled-rating-screen.html";
+}
+// */
 
 // alert("Makes it to moveCar var def. ")
 //define moveCar function:
